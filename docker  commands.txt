@@ -1,0 +1,16 @@
+=====================**DOCKER COMMANDS**=======================================================================
+->yum install docker -y
+->systemctl restart docker
+->docker run ubuntu or centos
+->docker ps -a (list of containers)
+-> docker image ls (list of images)
+->docker run -it --name shammu ubuntu (to give name, and creat a container)
+->docker start container (to start container)
+-> docker stop container_name (to stop container)(stop and kill)
+->docker attach shammu (enter into container)(exit & ctrl+pq)
+-> docker ps (to see list running containers)
+-> docker ps -f "status=exited" (to see list of exited containers)
+->doker rm container_name or id (to remove container)
+->docker rm  container_name or id container_name or id (to remove multiple container)
+-> docker rm $(docker ps -a -q)   ( to remove all containers)
+-> docker stop $(docker ps -a -q) (to stop all containers at a time)
